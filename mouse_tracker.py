@@ -8,7 +8,7 @@
 # |                           |
 # +---------------------------+ 1919, 1079
 import tkinter as tk
-import pyautogui, sys
+import pyautogui
 
 
 class LineTracker:
@@ -58,7 +58,3 @@ class LineTracker:
         except KeyboardInterrupt:
             print('\n')
 
-if __name__ == '__main__':
-    app = tk.Tk()
-    tracker = LineTracker(app)
-    app.mainloop() 
