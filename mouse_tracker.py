@@ -18,6 +18,7 @@ class LineTracker:
         self.height = height
         self.canvas = tk.Canvas(self.app, width = self.width, height = self.height)
         self.canvas.pack()
+        
         self.lines = []
         self.limit = limit
 
@@ -25,7 +26,7 @@ class LineTracker:
         self.pre_y = 0
         self.loop()
 
-    #Convert program monitor coordinates to window coordinates.
+    #Convert monitor coordinates to program window coordinates.
     def _get_scale_coordination(self, x ,y):
         sys_width,sys_height = pyautogui.size()
         trans_width = sys_width / self.width
