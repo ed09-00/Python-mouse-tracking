@@ -38,7 +38,6 @@ class LineTracker:
         scaled_x, scaled_y = self._get_scale_coordination(x,y)
         lind_id = self.canvas.create_line(self.pre_x, self.pre_y, scaled_x, scaled_y)
         self.lines.append(lind_id)
-        print('yee')
 
         if (len(self.lines) > self.limit):
             self.canvas.delete(self.lines.pop(0))
